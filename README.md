@@ -119,7 +119,8 @@ Be free to use, fork, clone and contribute.
 
 ## Features
 
-Build **RenPy** project
+Build **RenPy** project (Except web-build)
+To make **web-build** use [renpy-lint](https://github.com/marketplace/actions/renpy-web-build)
 To lint **RenPy** project use [renpy-lint](https://github.com/marketplace/actions/renpy-lint)
 
 ## Development Status
