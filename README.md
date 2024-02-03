@@ -1,39 +1,39 @@
 # RenPy Lint
 
-GitHub action to lint project on **RenPy** 
+GitHub action to build **RenPy** project 
 
 #### Support
 [![Documentation](https://img.shields.io/badge/docs-0094FF.svg)][documentation_path]
-[![Discussions](https://img.shields.io/badge/discussions-ff0068.svg)](https://github.com/PaxlavaGames/renpy-lint/discussions/)
-[![Issues](https://img.shields.io/badge/issues-11AE13.svg)](https://github.com/PaxlavaGames/renpy-lint/issues/)
+[![Discussions](https://img.shields.io/badge/discussions-ff0068.svg)](https://github.com/PaxlavaGames/renpy-build/discussions/)
+[![Issues](https://img.shields.io/badge/issues-11AE13.svg)](https://github.com/PaxlavaGames/renpy-build/issues/)
 
 #### Development
-[![Last Commit](https://img.shields.io/github/last-commit/PaxlavaGames/renpy-lint/main
-)](https://github.com/PaxlavaGames/renpy-lint)
-- [![Issues](https://img.shields.io/github/issues/PaxlavaGames/renpy-lint
-)](https://github.com/PaxlavaGames/renpy-lint/issues/)
-[![Closed Issues](https://img.shields.io/github/issues-closed/PaxlavaGames/renpy-lint
-)](https://github.com/PaxlavaGames/renpy-lint/issues/)
-- [![Pull Requests](https://img.shields.io/github/issues-pr/PaxlavaGames/renpy-lint
-)](https://github.com/PaxlavaGames/renpy-lint/pulls)
-[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed-raw/PaxlavaGames/renpy-lint
-)](https://github.com/PaxlavaGames/renpy-lint/pulls)
-- [![Discussions](https://img.shields.io/github/discussions/PaxlavaGames/renpy-lint
-)](https://github.com/PaxlavaGames/renpy-lint/discussions/)
+[![Last Commit](https://img.shields.io/github/last-commit/PaxlavaGames/renpy-build/main
+)](https://github.com/PaxlavaGames/renpy-build)
+- [![Issues](https://img.shields.io/github/issues/PaxlavaGames/renpy-build
+)](https://github.com/PaxlavaGames/renpy-build/issues/)
+[![Closed Issues](https://img.shields.io/github/issues-closed/PaxlavaGames/renpy-build
+)](https://github.com/PaxlavaGames/renpy-build/issues/)
+- [![Pull Requests](https://img.shields.io/github/issues-pr/PaxlavaGames/renpy-build
+)](https://github.com/PaxlavaGames/renpy-build/pulls)
+[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed-raw/PaxlavaGames/renpy-build
+)](https://github.com/PaxlavaGames/renpy-build/pulls)
+- [![Discussions](https://img.shields.io/github/discussions/PaxlavaGames/renpy-build
+)](https://github.com/PaxlavaGames/renpy-build/discussions/)
 
 [//]: # (#### Repository Stats)
 
-[//]: # ([![Stars]&#40;https://img.shields.io/github/stars/PaxlavaGames/renpy-lint)
+[//]: # ([![Stars]&#40;https://img.shields.io/github/stars/PaxlavaGames/renpy-build)
 
-[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-lint&#41;)
+[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-build&#41;)
 
-[//]: # ([![Contributors]&#40;https://img.shields.io/github/contributors/PaxlavaGames/renpy-lint)
+[//]: # ([![Contributors]&#40;https://img.shields.io/github/contributors/PaxlavaGames/renpy-build)
 
-[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-lintgraphs/contributors&#41;)
+[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-buildgraphs/contributors&#41;)
 
-[//]: # ([![Forks]&#40;https://img.shields.io/github/forks/PaxlavaGames/renpy-lint)
+[//]: # ([![Forks]&#40;https://img.shields.io/github/forks/PaxlavaGames/renpy-build)
 
-[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-lint&#41;)
+[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-build&#41;)
 
 <hr>
 
@@ -54,7 +54,7 @@ GitHub action to lint project on **RenPy**
 ### Run using stable version
 
 ```yaml
-name: Lint RenPy
+name: Build RenPy
 
 on:
   push:
@@ -68,15 +68,15 @@ jobs:
       uses: PaxlavaGames/renpy-install@v0.1.2
       with:
         version: "8.1.3"
-    - name: Lint RenPy
-      uses: PaxlavaGames/renpy-lint@v0.2.0
+    - name: Build RenPy
+      uses: PaxlavaGames/renpy-build@v0.1.0
 ```
 
 ### Run using last version (maybe unstable)
 
 ```yaml
 uses: PaxlavaGames/renpy-install@main
-uses: PaxlavaGames/renpy-lint@main
+uses: PaxlavaGames/renpy-build@main
 ```
 
 ## Parameters
@@ -102,11 +102,8 @@ jobs:
       uses: PaxlavaGames/renpy-install@v0.1.2
       with:
         version: "8.1.3"
-    - name: Check SDK
-      run: |
-        ls
-    - name: Lint RenPy
-      uses: PaxlavaGames/renpy-lint@0.2.0
+    - name: Build RenPy
+      uses: PaxlavaGames/renpy-build@0.1.0
       with:
         path: "./testing"
 ```
@@ -122,8 +119,8 @@ Be free to use, fork, clone and contribute.
 
 ## Features
 
-Lint **RenPy** project
-To build **RenPy** project use `renpy-build`
+Build **RenPy** project
+To lint **RenPy** project use [renpy-lint](https://github.com/marketplace/actions/renpy-lint)
 
 ## Development Status
 
@@ -147,4 +144,4 @@ You are welcome! To easy start please check:
 
 Empty yet
 
-[documentation_path]: https://github.com/PaxlavaGames/renpy-lint
+[documentation_path]: https://github.com/PaxlavaGames/renpy-build
