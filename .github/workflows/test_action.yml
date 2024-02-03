@@ -1,4 +1,4 @@
-name: Lint RenPy
+name: Build RenPy
 
 on:
   push:
@@ -19,3 +19,4 @@ jobs:
     - name: Check results
       run: |
         ls
+        ls ./FunAdventureinTurkey-1.0-dists
