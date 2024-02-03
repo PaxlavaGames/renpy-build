@@ -1,0 +1,16 @@
+name: "RenPy Lint"
+author: 'PaxlavaGames'
+description: "GitHub action to lint project on RenPy"
+inputs:
+  path:
+    description: "RenPy project path"
+    required: false
+    default: "."
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
+branding:
+  color: 'green'
+  icon: 'check-square'
