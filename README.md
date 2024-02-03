@@ -1,4 +1,4 @@
-# RenPy Lint
+# RenPy Build
 
 GitHub action to build **RenPy** project 
 
@@ -69,7 +69,7 @@ jobs:
       with:
         version: "8.1.3"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-build@v0.1.0
+      uses: PaxlavaGames/renpy-build@v0.1.1
 ```
 
 ### Run using last version (maybe unstable)
@@ -103,7 +103,7 @@ jobs:
       with:
         version: "8.1.3"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-build@0.1.0
+      uses: PaxlavaGames/renpy-build@0.1.1
       with:
         path: "./testing"
 ```
