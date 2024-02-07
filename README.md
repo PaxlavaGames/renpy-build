@@ -65,11 +65,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install RenPy
-      uses: PaxlavaGames/renpy-install@v0.2.0
+      uses: PaxlavaGames/renpy-install@v0.3.0
       with:
         version: "8.2.0"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-build@v0.2.0
+      uses: PaxlavaGames/renpy-build@v0.3.0
 ```
 
 ### Run using last version (maybe unstable)
@@ -99,11 +99,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install RenPy
-      uses: PaxlavaGames/renpy-install@v0.2.0
+      uses: PaxlavaGames/renpy-install@v0.3.0
       with:
         version: "8.2.0"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-build@0.2.0
+      uses: PaxlavaGames/renpy-build@0.3.0
       with:
         path: "./testing"
 ```
