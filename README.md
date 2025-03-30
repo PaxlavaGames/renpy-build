@@ -63,13 +63,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install RenPy
       uses: PaxlavaGames/renpy-install@v0.3.0
       with:
         version: "8.2.0"
     - name: Build RenPy
       uses: PaxlavaGames/renpy-build@v0.3.0
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: game-build
+        path: './build'
 ```
 
 ### Run using last version (maybe unstable)
@@ -88,7 +93,7 @@ uses: PaxlavaGames/renpy-build@main
 ### Example usage with parameters
 
 ```yaml
-name: Lint RenPy
+name: Build RenPy
 
 on:
   push:
@@ -97,7 +102,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install RenPy
       uses: PaxlavaGames/renpy-install@v0.3.0
       with:
@@ -106,6 +111,11 @@ jobs:
       uses: PaxlavaGames/renpy-build@0.3.0
       with:
         path: "./testing"
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: game-build
+        path: './build'
 ```
 
 ## Mission
